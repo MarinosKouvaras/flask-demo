@@ -1,7 +1,9 @@
-<html>
-    <body>
-        <p>Page test {{myname}} {{mylastname}}!!</p>
-        <p>You name {{yourname}}</p>
-        <p>Your surname {{yoursurname}}</p>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block title %}
+Index Page
+{%endblock%}
+
+{% block body %}
+
+<p>Hello {{yourname}}, {{yoursurname}}</p>
+{%endblock%}
